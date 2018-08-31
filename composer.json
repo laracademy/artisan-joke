@@ -1,0 +1,27 @@
+{
+    "name": "laracademy/artisan-joke",
+    "description": "We all need a little laughter during our work, so this command will return a random (bad) joke.",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael McMullen",
+            "email": "michael.mcmullen@tutelagesystems.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Laracademy\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laracademy\\Commands\\ArtisanJokeServiceProvider"
+            ]
+        }
+    }
+}
